@@ -43,20 +43,6 @@ F 6 "603-MFR-25FBF52-4K7" H 9000 5075 50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
-U 1 1 5E3148B5
-P 7650 5900
-F 0 "R1" H 7720 5946 50  0000 L CNN
-F 1 "10k" H 7720 5855 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7580 5900 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFR_2013-467719.pdf" H 7650 5900 50  0001 C CNN
-F 4 "Yageo" H 7650 5900 50  0001 C CNN "Mfr."
-F 5 "MFR-25FBF52-10K" H 7650 5900 50  0001 C CNN "Mfr. No."
-F 6 "603-MFR-25FBF52-10K" H 7650 5900 50  0001 C CNN "Mouser"
-	1    7650 5900
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Transistor_BJT:BC547 T2
 U 1 1 5E314B76
 P 8900 5525
@@ -165,9 +151,6 @@ Wire Wire Line
 Connection ~ 8375 6425
 Connection ~ 9000 6425
 Wire Wire Line
-	9000 4725 9650 4725
-Connection ~ 9000 4725
-Wire Wire Line
 	6325 5550 6975 5550
 Wire Wire Line
 	6975 5550 6975 4725
@@ -177,15 +160,15 @@ Connection ~ 8375 4725
 Text Label 6400 5850 0    50   ~ 0
 GND
 Text Label 6400 5550 0    50   ~ 0
-Vcc
+VH
 Text Label 10675 5450 0    50   ~ 0
-Vcc2
+VL
 Text Label 10675 5650 0    50   ~ 0
 GND
 Text Label 10675 5550 0    50   ~ 0
 1-Wire
 Wire Wire Line
-	9550 5275 9550 6600
+	9550 5275 9550 5550
 $Comp
 L Transistor_FET:BS170 T3
 U 1 1 5E31EDCD
@@ -200,10 +183,6 @@ F 6 "512-BS170" H 9950 5450 50  0001 C CNN "Mouser"
 	1    9950 5450
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	9750 5550 9650 5550
-Wire Wire Line
-	9650 4725 9650 5550
 Wire Wire Line
 	10575 5650 10575 6425
 Wire Wire Line
@@ -244,4 +223,23 @@ Wire Wire Line
 Connection ~ 10225 5100
 Wire Wire Line
 	10575 5450 11000 5450
+$Comp
+L Device:R R1
+U 1 1 5E3148B5
+P 7650 5900
+F 0 "R1" V 7550 5925 50  0000 C CNN
+F 1 "10k" V 7450 5900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7580 5900 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFR_2013-467719.pdf" H 7650 5900 50  0001 C CNN
+F 4 "Yageo" H 7650 5900 50  0001 C CNN "Mfr."
+F 5 "MFR-25FBF52-10K" H 7650 5900 50  0001 C CNN "Mfr. No."
+F 6 "603-MFR-25FBF52-10K" H 7650 5900 50  0001 C CNN "Mouser"
+	1    7650 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9550 5550 9750 5550
+Connection ~ 9550 5550
+Wire Wire Line
+	9550 5550 9550 6600
 $EndSCHEMATC
