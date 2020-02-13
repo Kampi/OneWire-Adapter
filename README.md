@@ -10,7 +10,7 @@
 
 ## About
 
-Small extension for an USART interface to use it as a 1-Wire interface.
+Small extension board to use a UART as a 1-Wire interface.
 
 ![Overview](docs/img/Overview_Small.png)
 
