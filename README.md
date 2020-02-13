@@ -22,4 +22,4 @@ Small extension board to use a UART as a 1-Wire interface.
 
 ## Maintainer
 
-- [Daniel Kampert](DanielKampert@kampis-elektroecke.de)
+- [Daniel Kampert](mailto:DanielKampert@kampis-elektroecke.de)
