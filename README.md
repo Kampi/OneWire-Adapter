@@ -12,13 +12,13 @@
 
 Small extension board to use a UART as a 1-Wire interface.
 
-![Overview](docs/img/Overview_Small.png)
+![Overview](OneWire-Adapter.png)
 
 ## History
 
 | **Version**  | **Description**                            | **Date**   |
 |:------------:|:------------------------------------------:|:----------:|
-| 1.0          | First hardware release                     | 29.01.2019 |
+| 1.0          | First hardware release                     | 30.09.2020 |
 
 ## Maintainer
 

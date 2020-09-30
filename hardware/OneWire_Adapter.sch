@@ -1,18 +1,17 @@
 EESchema Schematic File Version 4
-LIBS:OneWire_Adapter-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "1-Wire Adapter"
+Title "1-Wire / USART Adapter"
 Date "2020-01-29"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
-Comment1 "Author: Daniel Kampert"
+Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "1-Wire USART Adapter"
+Comment4 "Author: Daniel Kampert"
 $EndDescr
 $Comp
 L Device:R R2
